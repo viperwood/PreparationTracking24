@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450" 
+        MaxHeight="800" MaxWidth="1450"
+        MinHeight="800" MinWidth="1450"
+        x:Class="PreparationTracking.MainWindow"
+        Title="PreparationTracking">
+        <Grid RowDefinitions="100 * 100" ColumnDefinitions="* * *">
+                <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
+                        <Image Source="Карта.png"/>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
+                        <Canvas>
+                                <Ellipse Name="Ellipse1" Width="20" Height="20" Canvas.Left="200" Canvas.Top="70"/>
+                                <Ellipse Name="Ellipse2" Width="20" Height="20" Canvas.Left="200" Canvas.Top="120"/>
+                                <Ellipse Name="Ellipse3" Width="20" Height="20" Canvas.Left="200" Canvas.Top="180"/>
+                                <Ellipse Width="20" Name="Ellipse4" Height="20" Canvas.Right="150" Canvas.Top="60"/>
+                                <Ellipse Width="20" Name="Ellipse5" Height="20" Canvas.Right="150" Canvas.Top="60"/>
+                                <Ellipse Width="20" Name="Ellipse6" Height="20" Canvas.Right="380" Canvas.Top="190"/>
+                        </Canvas>
+                </StackPanel>
+        </Grid>
+</Window>
